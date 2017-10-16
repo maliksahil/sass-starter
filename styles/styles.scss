@@ -10,15 +10,12 @@ logo {
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
     -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-     
+    transition-duration: 0.8s;     
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     -o-transition-property: -o-transform;
-    transition-property: transform;
-     
+    transition-property: transform;     
     overflow:hidden;
-    cursor: pointer;
     }  
  
 .rotate:hover  
