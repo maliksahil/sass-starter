@@ -1,0 +1,18 @@
+@mixin square ($size, $color) {
+    width:$size;
+    height: $size;
+    background-color: $color;
+}
+
+.small-blue-square {
+    @include square(20px, rgb(0,0,255));
+}
+
+.big-red-square {
+    @include square(100px, rgb(255,0,0));
+}
+
+.big-red-square-with-border {
+    @extend .big-red-square;
+    border: 1px solid black;
+}

@@ -1,0 +1,17 @@
+@import 'variables.scss';
+
+@mixin square ($size, $color) {
+    width:$size;
+    height: $size;
+    background-color: $color;
+}
+
+@function fancyColor($col) {
+    @return darken($blue, ($col*25)/$total);
+}
+
+@for $i from 1 through $total {
+    .shades-#{$i}{
+        @include square(50px, fancyColor($i));
+    }
+}

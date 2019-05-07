@@ -1,0 +1,19 @@
+$blue: #2196F3;
+
+@mixin square ($size, $color) {
+    width:$size;
+    height: $size;
+    background-color: $color;
+}
+
+$total: 8;
+
+@function fancyColor($col) {
+    @return darken($blue, ($col*25)/$total);
+}
+
+@for $i from 1 through $total {
+    .shades-#{$i}{
+        @include square(50px, fancyColor($i));
+    }
+}

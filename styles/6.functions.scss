@@ -1,0 +1,16 @@
+$baseSize: 400px;
+$blue: #2196F3;
+
+@mixin square ($size, $color) {
+    width:$size;
+    height: $size;
+    background-color: $color;
+}
+
+.small-blue-square {
+    @include square($baseSize/4, $blue);
+}
+
+.big-darkblue-square{
+    @include square($baseSize/2, darken($blue, 20%));
+}

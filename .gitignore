@@ -1,4 +1,8 @@
 node_modules
 styles/**/*.css
 styles/**/*.css.map
+dist/**/*.css
+dist/**/*.css.map
 yarn.lock
+*.log
+.DS_Store

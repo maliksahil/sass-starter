@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"concurrently \"npm run lite-server\" \"npm-run-all -p sass:*\"",
-    "lite-server":"lite-server",
+    "start": "concurrently \"npm run lite-server\" \"npm-run-all -p sass:*\"",
+    "lite-server": "lite-server",
     "build-task:scss-compile": "node-sass-chokidar --source-map true styles -o dist",
     "build-task:autoprefixer": "postcss dist/*.css --use autoprefixer -d dist",
     "sass:build": "npm-run-all -p build-task:*",
@@ -15,12 +15,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lite-server": "^2.3.0",    
+    "lite-server": "^2.3.0",
     "chokidar-cli": "^1.2.0",
     "node-sass-chokidar": "^0.0.3",
-    "concurrently":"^3.5.0",
+    "concurrently": "^3.5.0",
     "autoprefixer": "^7.1.6",
     "postcss-cli": "^4.1.1",
-    "npm-run-all": "^4.0.2"    
+    "npm-run-all": "^4.0.2"
   }
 }
